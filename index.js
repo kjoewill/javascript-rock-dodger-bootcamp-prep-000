@@ -202,7 +202,13 @@ function moveDodgerRight() {
       DODGER.style.left = `${left + 4}px`;
     }
     
-    
+    function step() {
+      el.style.top = `${top += 2}px`
+ 
+      if (leftPos() < left + 4) {
+        window.requestAnimationFrame(step)
+      }
+  }
     
     
 }
