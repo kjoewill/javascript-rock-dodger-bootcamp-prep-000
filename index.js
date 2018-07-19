@@ -199,9 +199,9 @@ function moveDodgerRight() {
     var left = leftPos();
     
     function step() {
-      DODGER.style.left = `${left + 2}px`;
+      DODGER.style.left = `${left + 1}px`;
  
-      if ((leftPos() < (left + 6)) && (left < 360))  {
+      if ((leftPos() < (left + 4)) && (left < 360))  {
         window.requestAnimationFrame(step);
       }
     }
